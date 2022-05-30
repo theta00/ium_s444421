@@ -31,9 +31,9 @@ model.fit(X_train, y_train['gender'])
 
 
 y_predicted = model.predict(X_test)
-accuracy = accuracy_score(y_test, y_predicted)
+acc = accuracy_score(y_test, y_predicted)
 with open('build_accuracy.txt', 'w') as file:
-    file.write(str(accuracy))
+    file.write(str(acc))
     file.write('\n')
 
 
